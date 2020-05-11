@@ -7,8 +7,8 @@
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint .",
     "test": "npm run editorconfig && npm run stylelint",
-    "build": "gulp scss && gulp postcss",
-    "start": "npm run build && gulp browserSync"
+    "build": "gulp scss",
+    "start": "npm run build && gulp watch"
   },
   "repository": {
     "type": "git",

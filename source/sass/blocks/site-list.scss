@@ -62,6 +62,7 @@
       }
     }
   }
+
   .site-list__item a {
     padding: 0;
     padding-top: 25px;
@@ -84,8 +85,13 @@
       background-color: #000000;
       opacity: 0.3;
     }
+      &:focus {
+      outline: none;
+      border: 2px solid #ffffff;
+  }
   }
 }
+
 @media (min-width: $desktop-width) {
 
    .site-list {

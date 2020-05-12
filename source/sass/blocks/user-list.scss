@@ -40,6 +40,11 @@
 
     font-size: 0;
 
+    &:focus {
+      outline: none;
+      border: 2px solid #ffffff;
+  }
+
     &:hover .user-list__login-icon {
       opacity: 1;
       polygon {
@@ -58,7 +63,6 @@
     top: 29px;
     left: 12px;
   }
-
   }
 
 }

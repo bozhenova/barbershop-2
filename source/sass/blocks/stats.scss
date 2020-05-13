@@ -1,7 +1,7 @@
 @import "../variables";
 
 .stats {
-  width: 320px;
+  width: 370px;
   margin: 0 auto;
 }
 
@@ -108,10 +108,10 @@ line-height: 20px;
   text-align: right;
 }
 
-@media (min-width: $tablet-width) {
+@media screen and (min-width: $tablet-width) {
 .stats {
-  width: 640px;
-  margin-top: -185px;
+  width: 620px;
+  margin-top: -173px;
 }
 
 .stats__header {
@@ -165,7 +165,7 @@ line-height: 20px;
 }
 
 .stats__list tr {
-  width: 250px;
+  width: 240px;
   padding: 25px 35px 28px;
 }
 
@@ -193,7 +193,7 @@ line-height: 20px;
 
 }
 
-@media (min-width: $desktop-width) {
+@media screen and (min-width: $desktop-width) {
 .stats {
   display: flex;
   width: 960px;

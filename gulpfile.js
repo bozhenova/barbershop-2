@@ -7,9 +7,9 @@ var gulp = require('gulp'),
   rename = require('gulp-rename');
 var browserSync = require('browser-sync').create();
 
-gulp.task('scss', function (done) {
+gulp.task('scss', function(done) {
   return gulp
-    .src('source/sass/**/*.scss')
+    .src('source/sass/style.scss')
     .pipe(plumber())
     .pipe(sass({ outputStyle: 'expanded' }))
     .pipe(postcss([autoprefixer()]))
@@ -22,20 +22,17 @@ gulp.task('scss', function (done) {
   done();
 });
 
-gulp.task('html', function () {
-  return gulp.src('source/*.html')
-    .pipe(browserSync.stream());
+gulp.task('html', function() {
+  return gulp.src('source/*.html').pipe(browserSync.stream());
 });
 
-gulp.task('js', function () {
-  return gulp.src('source/js/*.js')
-    .pipe(browserSync.stream());
+gulp.task('js', function() {
+  return gulp.src('source/js/*.js').pipe(browserSync.stream());
 });
 
-gulp.task('watch', function (done) {
-
+gulp.task('watch', function(done) {
   browserSync.init({
-    server: './source'
+    server: './source',
   });
 
   gulp.watch('source/sass/**/*.scss', gulp.series('scss'));
@@ -46,6 +43,5 @@ gulp.task('watch', function (done) {
 
   done();
 });
-
 
 gulp.task('default', gulp.series('scss', 'watch'));

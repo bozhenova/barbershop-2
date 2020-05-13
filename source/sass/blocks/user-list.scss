@@ -27,7 +27,7 @@
   }
 }
 
-@media (min-width: $tablet-width) {
+@media screen and (min-width: $tablet-width) {
 
   .user-list {
     width: 60px;
@@ -59,15 +59,16 @@
       }
     }
 
-   .user-list__login-icon {
-    top: 29px;
-    left: 12px;
   }
+
+   .user-list__login-icon {
+    top: 27px;
+    left: 12px;
   }
 
 }
 
-@media (min-width: $desktop-width) {
+@media screen and (min-width: $desktop-width) {
 
   .user-list {
     width: auto;

@@ -1,18 +1,16 @@
-@import "../variables";
-@import "../mixins.scss";
-
-.advantages {
+.advantages-wrapper {
   position: relative;
-  width: 320px;
+  width: 280px;
   margin: 0 auto;
+  padding: 0 20px;
 
     &::after {
     content: '';
     position: absolute;
-    bottom: -47px;
-
+    bottom: -48px;
+    left: 0;
     height: 40px;
-    width: 100%;
+    width: 320px;
 
     background: url('../../img/corner-double.svg') no-repeat;
     }
@@ -53,7 +51,7 @@
 }
 
 .advantages__description {
-  width: 230px;
+  width: 280px;
   margin: 0 auto;
 
   font-size: 20px;
@@ -92,7 +90,7 @@
 
 @media (min-width: $tablet-width) {
 
-.advantages {
+.advantages-wrapper {
     position: relative;
     width: 640px;
     padding-right: 64px;
@@ -102,10 +100,10 @@
   &::after {
     content: '';
     position: absolute;
-    bottom: -69px;
-
+    bottom: -71px;
+    left: 0;
     height: 40px;
-    width: 640px;
+    width: 768px;
 
     background: url('../../img/corner-double.svg') no-repeat;
     }
@@ -166,13 +164,16 @@
 
 @media (min-width: $desktop-width) {
 
-.advantages {
+.advantages-wrapper {
+    padding-right: 120px;
+    padding-left: 120px;
     width: 960px;
     margin: 0 auto;
-    padding-bottom: 65px;
 
   &::after {
       height: 65px;
+      width: 1200px;
+      bottom: -49px;
     }
   }
 

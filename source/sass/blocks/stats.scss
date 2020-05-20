@@ -1,7 +1,5 @@
-@import "../variables";
-
 .stats {
-  width: 370px;
+  width: 320px;
   margin: 0 auto;
 }
 
@@ -30,6 +28,7 @@
   line-height: 27px;
   text-align: center;
 }
+
 .stats__legend {
 display: block;
 font-size: 20px;
@@ -110,16 +109,18 @@ line-height: 20px;
 
 @media screen and (min-width: $tablet-width) {
 .stats {
-  width: 620px;
-  margin-top: -173px;
+  width: 640px;
+  margin-top: -184px;
+  margin-bottom: 45px;
 }
 
 .stats__header {
   position: relative;
-
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  min-height: 129px;
+
   &::before {
     content: '';
 
@@ -165,8 +166,9 @@ line-height: 20px;
 }
 
 .stats__list tr {
-  width: 240px;
-  padding: 25px 35px 28px;
+  width: 250px;
+  padding: 25px 35px;
+  padding-bottom: 28px;
 }
 
 .stats__list td {
@@ -197,7 +199,7 @@ line-height: 20px;
 .stats {
   display: flex;
   width: 960px;
-  margin-top: -160px;
+  margin-top: -158px;
 }
 
 .stats__header {

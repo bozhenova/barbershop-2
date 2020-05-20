@@ -11,7 +11,12 @@ gulp.task('scss', function(done) {
   return gulp
     .src('source/sass/style.scss')
     .pipe(plumber())
-    .pipe(sass({ outputStyle: 'expanded' }))
+    .pipe(
+      sass({
+        includePaths: require('node-normalize-scss').includePaths,
+        outputStyle: 'expanded',
+      })
+    )
     .pipe(postcss([autoprefixer()]))
     .pipe(gulp.dest('source/css'))
     .pipe(minify())

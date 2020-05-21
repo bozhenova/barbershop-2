@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap');
 @import "normalize";
-@import "_variables";
+@import "variables";
 @import "scaffolding";
-@import "_mixins";
+@import "mixins";
 @import "blocks/page-header";
 @import "blocks/reviews";
 @import "blocks/main-nav";

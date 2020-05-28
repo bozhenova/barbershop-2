@@ -6,15 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta name="format-detection" content="telephone=no">
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="./style.min.css">
   </head>
   <body>
     <header class="page-header">
       <a class="page-header__logo">
           <picture>
-          <source media="screen and (min-width: 1100px)" srcset="img/logotype-desktop.svg">
-          <source media="screen and (min-width: 768px)" srcset="img/logotype-tablet.svg">
-          <img class="page-header__logo-image" src="img/logotype-mobile.svg"
+          <source media="screen and (min-width: 1200px)" srcset="./img/logotype-desktop.svg">
+          <source media="screen and (min-width: 768px)" srcset="./img/logotype-tablet.svg">
+          <img class="page-header__logo-image" src="./img/logotype-mobile.svg"
             width="225" height="85" alt="Барбершоп «Бородинский»">
         </picture>
       </a>
@@ -35,7 +35,7 @@
           <ul class="main-nav__list user-list">
             <li class="user-list__item">
               <a href="login.html" class="user-list__login"><svg class="user-list__login-icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><polygon points="0 7 7.01 7 7.01 4.06 10.96 8.01 7.01 11.91 7.01 9.06 0 9.02 0 7"/><polygon points="7.01 0 7.01 2 14.03 2 14.03 13.99 7.01 13.99 7.01 16 16 16 16 0 7.01 0"/></svg>
-							Войти</a>
+              Войти</a>
             </li>
           </ul>
         </div>
@@ -226,11 +226,11 @@
     <footer class="page-footer">
       <div class="page-footer__wrapper">
         <div class="page-footer__contacts contacts">
-          <b class="contacts__title">Барбершоп «Бородинский»</b>
+          <b class="contacts__title">Барбершоп Бородинский</b>
           <p class="contacts__text">
             г. Санкт-Петербург, ул. Большая Конюшенная 19/8 <br />
             <a href="tel:+78125556666" class="contacts__phone"
-              ><span class="contacts__phone-mobile">Тел.:</span>+7 (812)
+              ><span class="contacts__phone-mobile">Тел.:&nbsp;</span>+7 (812)
               555-66-66</a
             >
           </p>
@@ -238,29 +238,30 @@
         <div class="page-footer__social social">
           <b class="social__title">Давайте дружить!</b>
           <ul class="social__list">
+          <li class="social__item">
+            <a href="https://vkontakte.com" class="social__link social__link--vkontakte">
+              <span class="visually-hidden">Мы в ВКонтакте</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="https://facebook.com" class="social__link social__link--facebook">
+              <span class="visually-hidden">Мы в Фейсбуке</span>
+            </a>
+          </li>
             <li class="social__item">
-              <a href="#" class="social__link social__link--vkontakte"
-                >Мы в Вконтакте</a
-              >
-            </li>
-            <li class="social__item">
-              <a href="#" class="social__link social__link--facebook"
-                >Мы в Фейсбуке</a
-              >
-            </li>
-            <li class="social__item">
-              <a href="#" class="social__link social__link--instagram"
-                >Мы в Инстаграме</a
-              >
-            </li>
+            <a href="https://instagram.com" class="social__link social__link--instagram">
+              <span class="visually-hidden">Мы в Инстаграме</span>
+            </a>
+          </li>
           </ul>
         </div>
         <div class="page-footer__copyright copyright">
-          <b class="copyright__text">Разработано:</b
-          ><a href="#" class="copyright__link button">HTML Academy</a>
+          <span class="copyright__text">Разработано:</span>
+          <a href="#" class="copyright__link button">HTML&nbsp; Academy</a>
         </div>
       </div>
     </footer>
-    <script src="js/main.js"></script>
+    <script src="./main.js"></script>
   </body>
 </html>
+

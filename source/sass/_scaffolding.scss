@@ -11,11 +11,6 @@ body {
   font-style: normal;
   background-color: $bg-darkgrey;
 
-  @media screen and (min-width: $tablet-width){
-  background-color: $bg-grey;
-
-  }
-
 }
 
 img {

@@ -1,12 +1,13 @@
 .news__wrapper {
+  position: relative;
+  top: -54px;
   background-color: $bg-white;
   color: #000000;
   border-bottom: 1px solid $button-grey;
   margin: 0 auto;
-  margin-top: 47px;
   width: 280px;
   padding: 0 20px;
-
+  padding-top: 33px;
 }
 
 .news__title {
@@ -14,7 +15,7 @@
   line-height: 30px;
   text-transform: uppercase;
   text-align: center;
-  padding-top: 35px;
+  margin-top: 0;
 }
 
 .news__list {
@@ -61,7 +62,7 @@
 
 .news__text{
   margin: 0;
-  padding-top: 20px;
+  padding-top: 7px;
   padding-bottom: 20px;
   width: 222px;
 }
@@ -112,8 +113,6 @@
     }
   }
 
-
-
 .news__day {
   font-size: 30px;
   line-height: 30px;
@@ -146,8 +145,10 @@
 
 .news__wrapper{
   position: relative;
+  top: -54px;
   width: 640px;
   padding: 0 64px;
+  padding-top: 45px;
 }
 
 .news__list {
@@ -166,9 +167,9 @@
   }
 
   .news__title {
+    margin: 0;
     text-align: left;
-    margin-top: 47px;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
   }
 
   .news__text {
@@ -190,9 +191,8 @@
         border-top-width: 0;
         border-bottom-width: 10px;
         border-bottom-color: #000000;
+      }
 }
-
-  }
 
   .news__all {
     width: 160px;
@@ -200,9 +200,7 @@
     top: 25px;
     right: 64px;
   }
-
 }
-
 
 @media (min-width: $desktop-width) {
 
@@ -220,6 +218,7 @@
 }
 .news__title {
   margin-left: 65px;
+  padding-top: 55px;
 }
 
  .news__all {

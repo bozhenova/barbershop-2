@@ -31,7 +31,6 @@
 
 .main-nav--closed .main-nav__toggle::before {
   content: "";
-
   position: absolute;
   top: 15px;
   left: 17px;
@@ -158,14 +157,14 @@
 
 @media screen and (min-width: $tablet-width) {
   .main-nav {
-    width: auto;
+    width: 768px;
     background-color: #000000;
   }
 
   .main-nav__wrapper {
     display: flex;
-    justify-content: space-between;
     width: 640px;
+    justify-content: space-between;
     margin: 0 auto;
   }
 
@@ -175,9 +174,13 @@
 }
 
 @media screen and (min-width: $desktop-width) {
-  .main-nav__wrapper {
-    width: 960px;
-  }
+.main-nav {
+  width: 1200px;
+ }
+
+.main-nav__wrapper {
+  width: 960px;
+}
 
 }
 

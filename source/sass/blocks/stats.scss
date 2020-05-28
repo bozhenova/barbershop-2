@@ -36,13 +36,14 @@ line-height: 20px;
 }
 
 .stats__legend--bottom {
+  z-index: 999;
   padding-top: 20px;
   padding-bottom: 14px;
-
+  position: relative;
   text-align: center;
   color: rgba(255, 255, 255, 0.3);
 
-  background-color: $bg-darkgrey;
+  background-color: #242424;
 }
 
 .stats__legend sup {
@@ -112,6 +113,9 @@ line-height: 20px;
   width: 640px;
   margin-top: -184px;
   margin-bottom: 45px;
+  padding-left: 64px;
+  padding-right: 64px;
+  background-color: $bg-grey;
 }
 
 .stats__header {
@@ -199,6 +203,8 @@ line-height: 20px;
 .stats {
   display: flex;
   width: 960px;
+  padding-left: 120px;
+  padding-right: 120px;
   margin-top: -158px;
 }
 
